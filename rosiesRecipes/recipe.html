@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rosie's Recipes</title>
+    <link rel="stylesheet" href="styles/default-styles.css" type="text/css">
+    <script src="src/loader.js" type="module"></script>
+</head>
+<header>
+    <nav>
+        <div class="dropdown">
+            <button class="navbtn">...</button>
+            <img id = "logo" src="final_rosies_logo.png" alt="rosie logo">
+            <h1 id = "rosieTitle">Rosie's Recipes</h1>
+            <div class="nav-content">
+                <a href="index.php">Home</a>
+                <a href="allrecipes.php">Recipes</a>
+                <a href="aboutrosie.php">About Rosie</a>
+            </div>
+        </div>
+        <p class="search"><input id="searchBar"><button id="searchButton">Search</button></p>
+    </nav>
+</header>
+<body>    
+    
+    <section id="recipeWrapper">
+    <h2 id = "mainTitles">Grandma Rosie's Banana Bread</h2>
+    <p>Home/Recipes/Sweet & Cakes</p>
+
+    <p>After my roommates and I bought some bananas and then proceeded to forget about them for about a week, banana bread was the route for us!</p>
+    <p>At the time, I didn't have the recipe, or any of Grandma Rosie's recipes for that matter, so I used a recipe that I found online.</p>
+
+    <button class="myButton">Read More</button>
+
+    <img id = "food2" src="Banana Bread_1.jpg" alt="Banana Bread">
+
+    <h3 id = "bigSteps">What You'll Need:</h3>
+
+    <form id = "ingredients">
+        <input type="checkbox" id="recipe1" name="recipe1" value="Butter">
+        <label for="recipe1"> 1 stick of butter</label><br>
+
+        <input type="checkbox" id="recipe2" name="recipe2" value="Sugar">
+        <label for="recipe2"> 1 cup of sugar</label><br>
+
+        <input type="checkbox" id="recipe3" name="recipe3" value="egg">
+        <label for="recipe3"> 1 egg</label><br>
+
+        <input type="checkbox" id="recipe4" name="recipe4" value="bakingsoda">
+        <label for="recipe4"> 1 teaspoon of baking soda</label><br>
+
+        <input type="checkbox" id="recipe5" name="recipe5" value="water">
+        <label for="recipe5"> 1 tablespoon of water</label><br>
+
+        <input type="checkbox" id="recipe6" name="recipe6" value="vanilla">
+        <label for="recipe6"> 1 teaspoon of vanilla extract</label><br>
+
+        <input type="checkbox" id="recipe7" name="recipe7" value="banana">
+        <label for="recipe7"> 1 cup of mashed bananas ~ 3-4</label><br>
+
+        <input type="checkbox" id="recipe8" name="recipe8" value="banana2">
+        <label for="recipe8"> bananas</label><br>
+
+        <input type="checkbox" id="recipe9" name="recipe9" value="flour">
+        <label for="recipe9"> 1.5 cups of flour</label><br>
+
+        <input type="checkbox" id="recipe10" name="recipe10" value="salt">
+        <label for="recipe10"> A dash of salt</label><br>
+
+        <input type="checkbox" id="recipe11" name="recipe11" value="cinnamon">
+        <label for="recipe11"> 1-2 teaspoon of ground cinnamon</label><br>
+
+        <input type="checkbox" id="recipe12" name="recipe12" value="optional">
+        <label for="recipe12"> Optional: Nuts, raisins, chocolate chips</label><br>
+        
+      </form>
+      <div id = "steps">
+      <h3 id = "bigSteps">Directions:</h3>
+      <ol>
+          <li>In a large bowl, cream the butter and sugar together. Soften the butter first, so that you can get a fairly even mixture.</li>
+          <li>Dissolve 1 teaspoon of baking soda with 1 tablespoon of water.</li>
+          <li>Beat in an egg, mixing thoroughly before adding in your baking soda/water mix.</li>
+          <li>Next, add the vanilla extract and salt. Keep mixing!</li>
+          <li>If you haven't yet mashed your bananas, do that now, and then add them into the mix along with however much cinnamon you think feels right. I generally put about a teaspoon in.</li>
+          <li>Now that all the "wet" ingredients are mixed, add flour and mix well, until there isn't any evidence of flour in the bowl and everything has come together into a fairly thick batter. </li>
+            <li>At this point, consider what you want to add to this banana bread. I recommend mixing in chocolate chips or walnuts, or even both, if you're feeling bold.</li>
+            <li>Finally, pour the mixture into a loaf pan and bake it at 350 degrees for 50 minutes to an hour, or until a toothpick poked into the center of the loaf comes out clean.</li>
+        </ol>
+    </div>
+        <h2 id = "mainTitles">Related Recipes</h2>
+        <div><img id = "food" src="maccheese.jpg" alt="Mac and Cheese"></div>
+        <div><img id = "food" src="peachCobbler.jpg" alt="Peach Cobbler"></div>
+        <div><img id = "food" src="hamentashen.jpg" alt="Hamentashen"></div>
+    </section>
+</body>
+</html>

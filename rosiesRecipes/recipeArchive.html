@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rosie's Recipes</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <script src="src/loader.js" type="module"></script>
+</head>
+<body>    
+    
+    <div class="topnav" id="myTopnav">
+            <div class="navLogo">
+                <a href="#home"><img src="images/roiseLogo.png" style="width: 180px;"></a>
+            </div>
+            <a href="#">
+                    <div id="cover">
+                        <form method="get" action="">
+                            <div class="tb">
+                                <div class="td"><input type="text" placeholder="Search" required></div>
+                                <div class="td" id="s-cover">
+                                    <button class="searchbutton" type="submit">
+                                    <div id="s-circle"></div>
+                                    <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </a>
+            <a href="#about">About Rosie</a>
+            <div class="dropdown">
+                <button class="dropbtn">All Recipes
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Breakfast</a>
+                <a href="#">Lunch</a>
+                <a href="#">Dinner</a>
+                <a href="#">Salads</a>
+                <a href="#">Sides</a>
+                <a href="#">Sweets & Cakes</a>
+                </div>
+            </div>
+            <a href="index.html" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+
+    <div class="grid-intro">
+        <div class="mainTitles">
+                <h1>Recipe archive</h1>
+                <label class="container"><p>Breakfast</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Lunch</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Dinner</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Dessert</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Snacks</p>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+        </div>
+      
+    </div>
+
+    <div class="grid-guide">        
+            <div class="lists">
+                <h2>Dietary restraints</h2>    
+
+                <label class="container"><p>Vegetarian</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Vegan</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"><p>Gluten-Free</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>             
+            </div>
+        
+        <div class="sliders">
+            <div class = "prepslider">
+                <h2>Prep time</h2>
+                
+                <input type="range" min="1" max="60" value="50" class="slider" id="myRange">
+              
+            </div>
+
+            <div class = "prepslider">
+                <h2>Calories per serving</h2>
+                    
+                <input type="range" min="1" max="2000" value="50" class="slider" id="myRange">
+
+            </div>
+        </div>
+    </div> 
+    
+    <div class = "grid-select">
+        <div class="foodImg">
+            <img class="" src="images/hamentashen.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+        
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+        
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+
+        <div class="foodImg">
+            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+            <p>Hamentashen</p>
+        </div>
+    </div>
+
+    <div class="footer" style="margin-top:-15px">
+        <p>© 2020</p>
+    </div>
+
+    
+
+
+
+
+</body>
+</html>
