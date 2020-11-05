@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Rosie's Recipes</title>
-    <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
     <script src="src/loader.js" type="module"></script>
 </head>
 <body>    
@@ -48,7 +48,7 @@
 
 
     <div class="grid-intro">
-        <div class="mainTitles">
+        <div class="recipeTypes">
                 <h1>Recipe archive</h1>
                 <label class="container"><p>Breakfast</p>
                     <input type="checkbox" checked="checked">
@@ -89,73 +89,94 @@
                 <label class="container"><p>Gluten-Free</p>
                     <input type="checkbox">
                     <span class="checkmark"></span>
-                </label>             
+                </label>  
+                
+                <div class = "grid-select">
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+                    
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+                    
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+            
+                    <div class="foodImg">
+                        <img class="" src="hamentashen.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
+                        <p>Hamentashen</p>
+                    </div>
+                </div>
+            
             </div>
         
         <div class="sliders">
             <div class = "prepslider">
                 <h2>Prep time</h2>
                 
-                <input type="range" min="1" max="60" value="50" class="slider" id="myRange">
-              
+                <input type="range" min="1" max="60" value="50" id="slider" id="myRange">
+              <div id="selectedValue"></div>
             </div>
 
             <div class = "prepslider">
                 <h2>Calories per serving</h2>
                     
-                <input type="range" min="1" max="2000" value="50" class="slider" id="myRange">
-
+                <input type="range" min="1" max="2000" value="50" id="slider2" id="myRange">
+                <div id="selectedValue2"></div>
             </div>
         </div>
     </div> 
+
+    <script>
+        let slider = document.getElementById("slider");
+        let selectedValue = document.getElementById("selectedValue");
+        let selectedValue2 = document.getElementById("selectedValue2");
+
+        selectedValue.innerHTML = slider.value;
+        selectedValue2.innerHTML = slider2.value;
+
+        slider.oninput = function(){
+            selectedValue.innerHTML = this.value;
+            
+        }
+
+        slider2.oninput = function(){
+            
+            selectedValue2.innerHTML = this.value;
+        }
+    </script>
     
-    <div class = "grid-select">
-        <div class="foodImg">
-            <img class="" src="images/hamentashen.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-        
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-        
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:left; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:center; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-
-        <div class="foodImg">
-            <img class="" src="images/banana-bread.jpg" style="height: auto; width: 85%; float:right; border-radius: 14px; margin-top: 100px; margin-right: 20px;"></img>
-            <p>Hamentashen</p>
-        </div>
-    </div>
-
+    
     <div class="footer" style="margin-top:-15px">
         <p>© 2020</p>
     </div>
